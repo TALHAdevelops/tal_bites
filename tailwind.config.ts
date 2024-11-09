@@ -8,10 +8,12 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+      backgroundImage: {
+        'food-image': "url('/assets/bgfood.png')",
+        'food-image2': "url('/assets/logTalBites.png')",
+     }
+     
+        
     },
   },
   plugins: [],

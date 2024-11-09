@@ -1,13 +1,8 @@
-// App.tsx
 "use client";
 import React, { useState } from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Easyaccess from "./components/easyaccess";
-import Footer from "./components/Footer";
-
-
-
+import Navbar from "../components/Navbar";
+import Homefoods from "../components/homefood";
+import Footer from "../components/Footer";
 
 export default function App() {
   const [isCartVisible, setIsCartVisible] = useState(false);
@@ -19,9 +14,8 @@ export default function App() {
   return (
     <div>
       <Navbar toggleCartVisibility={toggleCartVisibility} isCartVisible={isCartVisible} />
-     <Hero/>
-   <Easyaccess/>
-   <Footer/>
+      <Homefoods isCartVisible={isCartVisible} />
+      <Footer />
     </div>
   );
 }
